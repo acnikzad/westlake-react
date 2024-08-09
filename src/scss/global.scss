@@ -1,0 +1,21 @@
+@import "./variable.scss";
+
+root {
+  --primary-color: #{$primary-color};
+  --secondary-color: #{$secondary-color};
+  --accent-color: #{$accent-color};
+  --font-family: #{$font-family};
+  --button-radius: #{$button-radius};
+}
+
+body {
+  font-family: var(--font-family);
+  color: var(--primary-color);
+  background-color: var(--secondary-color);
+}
+
+button {
+  background-color: var(--primary-color);
+  color: #fff;
+  border-radius: var(--button-radius);
+}
